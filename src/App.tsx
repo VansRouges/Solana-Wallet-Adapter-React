@@ -27,7 +27,7 @@ import { actions, utils, programs, NodeWallet, Connection} from '@metaplex/js';
 require('./App.css');
 require('@solana/wallet-adapter-react-ui/styles.css');
 let thelamports = 0;
-let theWallet = "9m5kFDqgpf7Ckzbox91RYcADqcmvxW4MmuNvroD5H2r9"
+let theWallet = "DefQXWKL8gYxVajjhUHrvFpSyCdsFPvmEgH1K9BKNbve"
 function getWallet(){
 
     
@@ -82,7 +82,7 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
 
 const Content: FC = () => {
     let [lamports, setLamports] = useState(.1);
-    let [wallet, setWallet] = useState("9m5kFDqgpf7Ckzbox91RYcADqcmvxW4MmuNvroD5H2r9");
+    let [wallet, setWallet] = useState("DefQXWKL8gYxVajjhUHrvFpSyCdsFPvmEgH1K9BKNbve");
 
   
     
@@ -98,7 +98,7 @@ const Content: FC = () => {
 
         if (!publicKey) throw new WalletNotConnectedError();
         connection.getBalance(publicKey).then((bal) => {
-            console.log(bal/LAMPORTS_PER_SOL);
+            console.log("Solana SOL={}",bal/LAMPORTS_PER_SOL);
 
         });
 
