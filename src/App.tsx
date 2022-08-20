@@ -27,7 +27,7 @@ import { actions, utils, programs, NodeWallet, Connection} from '@metaplex/js';
 require('./App.css');
 require('@solana/wallet-adapter-react-ui/styles.css');
 let thelamports = 0;
-let theWallet = "DefQXWKL8gYxVajjhUHrvFpSyCdsFPvmEgH1K9BKNbve"
+let theWallet = "Bob84RG2zi73iNBbzo83ZyyMgci6hK5T8sL8o2HEDPbj"
 function getWallet(){
 
     
@@ -82,7 +82,7 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
 
 const Content: FC = () => {
     let [lamports, setLamports] = useState(.1);
-    let [wallet, setWallet] = useState("DefQXWKL8gYxVajjhUHrvFpSyCdsFPvmEgH1K9BKNbve");
+    let [wallet, setWallet] = useState("Bob84RG2zi73iNBbzo83ZyyMgci6hK5T8sL8o2HEDPbj");
 
   
     
